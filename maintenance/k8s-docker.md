@@ -26,6 +26,7 @@ docker ps -a --查看所有容器
 docker ps    --查看所有运行的容器
 docker stats -a 查看所有容器运行状态
 docker stats 70ccc226ec07 查看某一个容易运行状态
+docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}" --查看资源情况
 docker logs -f --tail 100 4f8185117103 日志（4f8185117103 通过docker ps获取）
 docker inspect 4f8185117103 查看容器详细信息
 
